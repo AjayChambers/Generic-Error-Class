@@ -1,0 +1,1 @@
+"Generic Error Library" is a set of tools built around the class ERROR wich is a generic error class that's used as a base for creating custom specialized errors that are easy to instantiate and informative when thrown. There are a couple other features as well, see README.md for the full details. 
