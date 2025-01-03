@@ -1,0 +1,120 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+ColumnLimit: 80
+TabWidth: 4
+IndentWidth: 4
+MaxEmptyLinesToKeep: 3
+AccessModifierOffset: -1
+ContinuationIndentWidth: 6
+BracedInitializerIndentWidth: 6
+ShortNamespaceLines: 40
+
+IndentCaseLabels: false
+IndentGotoLabels: false
+IndentAccessModifiers: false
+IndentWrappedFunctionNames: false
+NamespaceIndentation: All
+BreakBeforeBraces: Custom
+BraceWrapping:
+    AfterNamespace: true
+    AfterFunction: true
+    AfterControlStatement: MultiLine
+    AfterCaseLabel: false
+    AfterClass: false
+    AfterEnum: false
+    AfterExternBlock: true
+    AfterObjCDeclaration: false
+    AfterStruct: false
+    AfterUnion: false
+    BeforeCatch: false
+    BeforeElse: false
+    BeforeLambdaBody: false
+    BeforeWhile: false
+    SplitEmptyFunction: false
+BreakBeforeBinaryOperators: NonAssignment
+AllowShortFunctionsOnASingleLine: All # All, InlineOnly, Empty, None
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: WithoutElse #  AllIfsAndElse, WithoutElse, OnlyFirstIf, Never
+AllowShortBlocksOnASingleLine: Always # Always, Empty, Never
+AllowShortLoopsOnASingleLine: true
+AllowShortEnumsOnASingleLine: false
+AlwaysBreakAfterDefinitionReturnType: false
+AlwaysBreakTemplateDeclarations: No
+AlwaysBreakBeforeMultilineStrings: true
+AlwaysBreakAfterReturnType: None
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+BinPackArguments: false
+BinPackParameters: false
+PackConstructorInitializers: CurrentLine # NewLine, SameLine, CurrentLine
+BreakConstructorInitializers: AfterColon # BeforeColon, BeforeComma, AfterColon
+BreakInheritanceList: BeforeColon
+BreakConstructorInitializersBeforeComma: true
+EmptyLineAfterAccessModifier: Leave # Always Leave Never
+EmptyLineBeforeAccessModifier: Leave # Always Leave Never
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+    AfterControlStatements: true
+    AfterForeachMacros: true
+    AfterIfMacros: true
+    AfterPlacementOperator: true
+    AfterOverloadedOperator: true
+    AfterRequiresInClause: true
+    AfterFunctionDeclarationName: false
+    AfterFunctionDefinitionName: false
+    AfterRequiresInExpression: false
+    BeforeNonEmptyParentheses: false
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeSquareBrackets: false
+SpaceAfterTemplateKeyword: false
+SpaceAroundPointerQualifiers: After
+SpacesInAngles: false
+SpaceInEmptyBlock: false
+SpacesInParentheses: false
+SpaceInEmptyParentheses: false
+SpacesInConditionalStatement: false
+SpacesInCStyleCastParentheses: false
+SpacesInContainerLiterals: false
+AlignAfterOpenBracket: AlwaysBreak # true, false, Align, DontAlign, AlwaysBreak, BlockIndent
+PointerAlignment: Left
+ReferenceAlignment: Left
+DerivePointerAlignment: false
+AlignArrayOfStructures: Left
+AlignEscapedNewlines: Left
+AlignOperands: AlignAfterOperator
+AlignConsecutiveAssignments:
+    Enabled: true
+    AcrossComments: true
+    AlignCompound: true
+    PadOperators: true
+    AcrossEmptyLines: false
+AlignConsecutiveBitFields:
+    Enabled: true
+    AcrossComments: true
+    AcrossEmptyLines: false
+AlignConsecutiveDeclarations:
+    Enabled: true
+    AcrossComments: true
+    AcrossEmptyLines: false
+    AlignFunctionPointers: false
+AlignConsecutiveMacros:
+    Enabled: true
+    AcrossComments: true
+    AcrossEmptyLines: false
+AlignConsecutiveShortCaseStatements:
+    Enabled: true
+    AcrossComments: true
+    AcrossEmptyLines: true
+    AlignCaseColons: true
+AlignTrailingComments:
+    Kind: Leave # (a) Always, (b) Leave, (c) Never
+    OverEmptyLines: 3
+RemoveBracesLLVM: false
+InsertNewlineAtEOF: true
+# SpacesBeforeTrailingComments: 2
+# SpacesInLineCommentPrefix:
+# Minimum: 2
+# Maximum: 2
