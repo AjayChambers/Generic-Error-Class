@@ -15,7 +15,7 @@
   License.
 *****************************************************************/
 
-#include "gen-err-lib.h"
+#include "gen-err-class.h"
 
 
 using namespace std;
