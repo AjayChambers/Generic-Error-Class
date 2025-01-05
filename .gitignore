@@ -1,4 +1,11 @@
-.out/*
+# Files Pending Deletion
+.trash-bin/
+
+# Compiled Files
+out/**/*
+
+# Object files
 *.o
-.vscode/
-License
+
+# Ignore .vscode settings file, but keep the folder & tasks.json
+.vscode/settings.json
