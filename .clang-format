@@ -1,0 +1,25 @@
+Language: Cpp
+BasedOnStyle: Microsoft
+ColumnLimit: 90
+TabWidth: 4
+IndentWidth: 4
+MaxEmptyLinesToKeep: 4
+AccessModifierOffset: -1
+ContinuationIndentWidth: 6
+BracedInitializerIndentWidth: 6
+BraceWrapping:
+    AfterNamespace: true
+    AfterClass: true
+    AfterEnum: true
+    AfterExternBlock: true
+    AfterStruct: true
+    AfterUnion: true
+    AfterFunction: false
+    AfterCaseLabel: false
+    AfterObjCDeclaration: false
+    BeforeCatch: false
+    BeforeElse: false
+    BeforeLambdaBody: false
+    BeforeWhile: false
+    SplitEmptyFunction: false
+    AfterControlStatement: MultiLine
