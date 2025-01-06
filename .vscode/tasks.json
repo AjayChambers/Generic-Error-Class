@@ -8,10 +8,12 @@
       "command": "g++",
       "args": [
         "-std=c++23",
+        // "-fdiagnostics-color=always",
+        // "-fmessage-length=60",
         "-g",
         "${cwd}/src/main.cpp",
         "-o",
-        "${cwd}/out/main"
+        "${cwd}/bin/main"
       ],
       "icon": {
         "id": "file-add",
@@ -30,7 +32,7 @@
     {
       "label": "RUN MAIN",
       "detail": "Execute src/main.cpp",
-      "command": "${cwd}/out/main",
+      "command": "${cwd}/bin/main",
       "problemMatcher": [],
       "icon": {
         "id": "play-circle",

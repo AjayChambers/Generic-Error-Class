@@ -1,15 +1,36 @@
-GCC = g++
-FLAGS = -Wall -std=c++23
+# COMPILER/LINKER
+COMPILE = g++
+ARCHIVE = ar rcs
+CPP_STD = -std=c++23
+FLAGS = -Wall -fdiagnostics-color=always -fmessage-length=80
 
-LIB_CPP = src/gen-err-class.cpp
-LIB_O = out/gen-err-class.o
+# DIRECTORIES
+SRC = $(CWD)src/
+BIN = $(CWD)build/
+LIB = $(CWD)lib/
+INC = $(CWD)include/
 
-TARGET = out/gen-err-class.a
-# FILES := gen-err-class.cpp gen-err-class.h
+# SOURCE FILES
+MAIN_CXX = $(SRC)main.cpp
+GEN_ERR = $(SRC)gen_err.cpp
+
+# FINAL TARGET
+TARGET = $(BIN)main
+
+# LIBRARY
+GEN_ERR_CXX = $(LIB)libgen_err.a
+OBJ_GEN_OBJ = $(BIN)gen_err.o
+LIB_GEN_ERR_A = $(LIB)libgen_err.a
 
 
-TARGET: $(LIB_O)
-	ar rcs $(TARGET) $(LIB_O)
+#########################################################
+# RULES
+#########################################################
+all: $(TARGET)
 
-out/gen-err-class.o: $(LIB_CPP)
-	$(GCC) $(FLAGS) -c $(LIB_CPP) -o $(LIB_O)
+$(TARGET): $(MAIN_CXX)
+	$(COMPILE) $(CPP_STD) $(FLAGS) -I$(INC) -o $(TARGET) $(MAIN_CXX)
+
+
+$(LIB_GEN_ERR): $(GEN_ERR)
+	$(COMPILE) $(CPP_STD) $(FLAGS) -I$(INC) -c $(GEN_ERR)
